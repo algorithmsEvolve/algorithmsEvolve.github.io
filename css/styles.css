@@ -47,10 +47,10 @@ img.clipped {
   clip-path: circle();
 }
 
-.headerOnePage {
+/* .headerOnePage {
   position: fixed;
   width: 100vw;
-}
+} */
 .sidebar {
   grid-area: sidebar;
   background: #696969;
