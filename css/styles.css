@@ -40,17 +40,12 @@ body {
 
 .content {
   grid-area: content;
-  background: url(assets/images/background-shapes.png);
 }
 
 img.clipped {
   clip-path: circle();
 }
 
-/* .headerOnePage {
-  position: fixed;
-  width: 100vw;
-} */
 .sidebar {
   grid-area: sidebar;
   background: #696969;
@@ -363,11 +358,6 @@ div.skill {
     grid-template-columns: 150px 1fr;
     grid-template-rows: 1fr auto;
     align-items: unset;
-  }
-
-  .headerOnePage {
-    position: unset;
-    width: unset;
   }
 
   nav ul {
