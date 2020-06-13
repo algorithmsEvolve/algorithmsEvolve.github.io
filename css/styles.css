@@ -9,6 +9,16 @@ body {
   );
   margin: 0;
   padding: 0;
+  transition: 0.8s;
+  justify-content: center;
+}
+
+.job-text {
+  opacity: 0.8;
+}
+
+.divider-text {
+  opacity: 0.6;
 }
 
 .content {
@@ -40,14 +50,13 @@ img.clipped {
     "content"
     "footer";
   grid-template-columns: 1fr;
-  /* grid-template-rows: 80px 800px 250px; */
   align-items: center;
 }
 
 .content,
 .sidebar,
 .footer {
-  padding: 1em;
+  padding: 0.3em;
 }
 
 nav ul {
@@ -83,10 +92,11 @@ nav li a:hover {
 .hero {
   max-width: 960px;
   margin: 0 auto;
+  margin-top: 1em;
   text-align: center;
 }
 
-.hero img {
+.hero img.pp {
   width: 200px;
 }
 
@@ -99,7 +109,7 @@ nav li a:hover {
   font-weight: 300;
   line-height: 1.8em;
   color: #98a0ad;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .action-btn {
@@ -112,11 +122,25 @@ nav li a:hover {
   padding: 0.5em 2em;
   border-radius: 40px;
   margin: 1em 0;
-  transition: 0.3s;
 }
 
 .action-btn:hover {
   box-shadow: 0 0px 25px rgb(38, 78, 165);
+}
+.download-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8em;
+  background: #179277;
+  padding: 0.5em 2em;
+  border-radius: 40px;
+  margin: 1em 0;
+}
+
+.download-btn:hover {
+  box-shadow: 0 0px 25px #179277;
 }
 
 footer ul {
@@ -155,6 +179,39 @@ h1.white-text {
   color: white;
 }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.float-left {
+  float: left;
+}
+
+.icon-div {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.skillname {
+  margin-left: -1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-text-align {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.skill-icon {
+  margin: auto;
+}
 /* skills meter */
 .meter {
   height: 10px; /* Can be anything */
@@ -165,6 +222,7 @@ h1.white-text {
   border-radius: 25px;
   padding: 5px;
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
 }
 .meter > span {
   display: block;
@@ -255,9 +313,22 @@ h6 {
   padding-inline-end: 0;
 }
 
+h1,
+h4 {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
 div.skill {
   margin: 2em 0 2em 0;
 }
+
 /* end custom css */
 
 /* responsive */
@@ -282,12 +353,18 @@ div.skill {
     padding-top: 3em;
   }
 
+  .skillname {
+    margin-left: 0;
+    justify-content: unset;
+    align-items: center;
+  }
+
   .hero {
     text-align: left;
     margin: 2em auto;
   }
 
-  .hero img {
+  .hero img.pp {
     width: 250px;
     float: right;
   }
