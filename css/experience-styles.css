@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  font-family: "Poppins", sans-serif !important;
+  background: linear-gradient(
+    to right,
+    rgb(71, 71, 71),
+    rgb(44, 44, 44),
+    rgb(22, 22, 22)
+  ) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transition: 0.8s !important;
+  justify-content: center !important;
+}
+
+#timeline .timeline-badge.center-left,
+#timeline .timeline-badge.center-right {
+  opacity: 0 !important;
+}
+
+.experience h4 {
+  font-weight: bold;
+}
+
+.font2 {
+  color: white;
+  opacity: 0.8;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.font3 {
+  opacity: 0.8;
+  color: white;
+  font-size: 0.5em;
+}
+
+.divider-text {
+  opacity: 0.6 !important;
+}
+
+.job-text {
+  opacity: 0.8;
+}
+
+.content {
+  margin-top: 2.5em;
+  grid-area: content !important;
+}
+
+.text-muted {
+  color: white !important;
+  opacity: 0.6 !important;
+  font-size: 0.5em !important;
+}
+
+#timeline .timeline-movement .timeline-item .timeline-panel {
+  text-align: left !important;
+  line-height: 0.5 !important;
+}
+
+.sidebar {
+  left: 0;
+  z-index: 10 !important;
+  position: fixed !important;
+  width: 100vw !important;
+  grid-area: sidebar !important;
+  background: #696969 !important;
+  justify-content: center !important;
+}
+
+.container {
+  font-size: 1.5em !important;
+  width: 100% !important;
+  height: 100vh !important;
+  display: grid !important;
+  grid-template-areas:
+    "sidebar"
+    "content"
+    "footer" !important;
+  grid-template-columns: 1fr !important;
+  align-items: center !important;
+}
+
+.content,
+.sidebar,
+.footer {
+  padding: 0.3em 0em 0.3em 0em !important;
+}
+
+nav ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: space-around !important;
+  text-align: center !important;
+}
+
+nav li {
+  list-style: none !important;
+  padding: 1em 0 !important;
+}
+
+nav li a {
+  color: white !important;
+  font-weight: 700 !important;
+  opacity: 0.6 !important;
+  text-decoration: none !important;
+  transition: 0.3s !important;
+  font-size: 80% !important;
+}
+
+nav li a:hover {
+  opacity: 1 !important;
+}
+
+.thispage {
+  opacity: 1 !important;
+}
+
+.portfolio-image {
+  text-align: center !important;
+}
+
+.experience {
+  text-align: center !important;
+}
+
+.hero {
+  max-width: 960px !important;
+  margin: 0 auto !important;
+  margin-top: 5em !important;
+  text-align: center !important;
+}
+
+/* custom css */
+h1.white-text {
+  color: white !important;
+}
+
+.white-text {
+  color: white !important;
+}
+
+.flex {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.float-left {
+  float: left !important;
+}
+
+h6 {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  margin-inline-start: 0 !important;
+  margin-inline-end: 0 !important;
+  padding-block-start: 0 !important;
+  padding-block-end: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
+}
+
+h1,
+h5 {
+  margin-block-start: 0.5em !important;
+  margin-block-end: 0.5em !important;
+  margin-inline-start: 0 !important;
+  margin-inline-end: 0 !important;
+  padding-block-start: 0 !important;
+  padding-block-end: 0 !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
+}
+
+/* end custom css */
+
+/* responsive */
+@media (min-width: 1040px) {
+  .sidebar {
+    width: unset !important;
+    height: 100vh !important;
+    padding-left: 0.3em !important;
+    padding-right: 0.3em !important;
+  }
+  #timeline .timeline-badge.center-left,
+  #timeline .timeline-badge.center-right {
+    opacity: 1 !important;
+  }
+  .container {
+    height: 100vh !important;
+    grid-template-areas:
+      "sidebar content"
+      "sidebar footer" !important;
+    grid-template-columns: 150px 1fr !important;
+    grid-template-rows: 1fr auto !important;
+    align-items: unset !important;
+  }
+
+  .index {
+    margin-left: -8em !important;
+  }
+
+  .content {
+    margin-left: -1em !important;
+  }
+
+  nav ul {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-direction: column !important;
+  }
+
+  .sidebar {
+    background: #575757 !important;
+    padding-top: 3em !important;
+  }
+}
+
+/* modal */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Modal Header */
+.modal-header {
+  display: block;
+  background-color: #575757;
+  color: white;
+}
+
+.modal-header h2 {
+  font-size: 1.5em !important;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* end modal */
