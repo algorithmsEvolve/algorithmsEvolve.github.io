@@ -42,12 +42,31 @@ body {
   opacity: 0.6 !important;
 }
 
-img.black-background {
-  background: black;
+.black-background {
+  background-color: black !important;
 }
 
 img.contain {
-  object-fit: contain;
+  height: unset !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#timeline
+  .timeline-movement
+  .timeline-item
+  .timeline-panel.debits
+  .timeline-panel-ul
+  .lefting-wrap,
+#timeline
+  .timeline-movement
+  .timeline-item
+  .timeline-panel.credits
+  .timeline-panel-ul
+  .lefting-wrap {
+  position: relative !important;
 }
 
 .job-text {
