@@ -3,86 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akbar Riski's Profile - Portfolio</title>
+    <title>Akbar Riski's Profile</title>
     <!-- css -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/flickity.css" media="screen" />
     <!-- end css -->
   </head>
   <body>
     <div class="container">
-      <div class="sidebar">
+      <div class="sidebar headerOnePage">
         <nav>
           <ul>
             <li><a href="../index.html">About</a></li>
-            <li>
-              <a href="#" class="thispage">Portfolio</a>
-            </li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a id="myBtn" href="#">Experience</a></li>
+            <li><a href="#" class="thispage">Portfolio</a></li>
+            <li><a id="myBtn2" href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
       <div class="content">
         <section class="hero">
-          <img src="../assets/images/hero.jpeg" class="clipped pp" />
-          <div class="hero-content">
-            <h1 class="white-text">Akbar Riski</h1>
-            <p>
-              I'm a freelance Programmer base in Jakarta, Indonesia. I've worked
-              with startups and established companies. I'm passionate about my
-              work.
-            </p>
-            <div class="skill">
-              <div class="skillname white-text">
-                <h6>Laravel</h6>
-              </div>
-              <div class="meter grey animate">
-                <span style="width: 50%;"><span></span></span>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skillname white-text">
-                <h6>CodeIgniter</h6>
-              </div>
-              <div class="meter grey animate">
-                <span style="width: 85%;"><span></span></span>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skillname white-text">
-                <h6>React Native</h6>
-              </div>
-              <div class="meter grey animate">
-                <span style="width: 85%;"><span></span></span>
-              </div>
-            </div>
-            <a
-              href="https://wa.me/6289529229541?text=Hello,%20Akbar.%20I've%20seen%20your%20portfolio.%20"
-              class="action-btn"
+          <h4 class="white-text job-text title">
+            <span class="divider-text">| </span>My Portfolio<span
+              class="divider-text"
             >
-              Contact Me
-            </a>
+              |</span
+            >
+          </h4>
+          <!-- Flickity HTML init -->
+          <div
+            class="carousel"
+            data-flickity='{ "imagesLoaded": true, "percentPosition": false }'
+          >
+            <img
+              src="../assets/images/mosacc.png"
+              alt="Mosque Accounting App"
+            />
+            <img
+              src="../assets/images/rsjsh.png"
+              alt="RSJ SH Technician Facilities Report App"
+            />
+            <img src="../assets/images/p3k.jpg" alt="p3k app" />
+            <img src="../assets/images/catin.jpeg" alt="catin app" />
+            <img src="../assets/images/TAA.jpg" alt="Steganography App" />
+            <img src="../assets/images/erpapp.png" alt="erpapp" />
+            <img src="../assets/images/calc.png" alt="calc" />
           </div>
         </section>
       </div>
-      <div class="footer">
+      <div class="footer" style="position: fixed; bottom: 0; width: 100vw;">
         <footer>
-          <ul>
-            <li>
-              <a href=""><p>3K</p></a>
-            </li>
-            <li>
-              <a href=""><p>10K</p></a>
-            </li>
-            <li>
-              <a href=""><p>2.2K</p></a>
-            </li>
-            <li>
-              <a href=""><p>12K</p></a>
-            </li>
-          </ul>
+          <p class="white-text">Algorithm's Evolve © 2020</p>
         </footer>
       </div>
     </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Sorry..</h2>
+        </div>
+        <div class="modal-body">
+          <p>This page is still under construction.</p>
+        </div>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="../js/flickity.pkgd.min.js"></script>
+    <script src="../js/myjs.js"></script>
   </body>
 </html>
