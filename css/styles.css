@@ -47,6 +47,9 @@ img.clipped {
 }
 
 .sidebar {
+  z-index: 1;
+  position: fixed;
+  width: 100vw;
   grid-area: sidebar;
   background: #696969;
   justify-content: center;
@@ -55,6 +58,7 @@ img.clipped {
 .footer {
   grid-area: footer;
   background: #575757;
+  width: 100vw;
 }
 
 .container {
@@ -106,10 +110,14 @@ nav li a:hover {
   opacity: 1;
 }
 
+.portfolio-image {
+  text-align: center;
+}
+
 .hero {
   max-width: 960px;
   margin: 0 auto;
-  margin-top: 1em;
+  margin-top: 5em;
   text-align: center;
 }
 
@@ -351,13 +359,26 @@ div.skill {
 
 /* responsive */
 @media (min-width: 1040px) {
+  .sidebar {
+    width: unset;
+    height: 100vh;
+  }
   .container {
+    height: 100vh;
     grid-template-areas:
       "sidebar content"
       "sidebar footer";
     grid-template-columns: 150px 1fr;
     grid-template-rows: 1fr auto;
     align-items: unset;
+  }
+
+  .index {
+    margin-left: -8em !important;
+  }
+
+  .content {
+    margin-left: -1em;
   }
 
   nav ul {
