@@ -50,11 +50,13 @@ $(document).ready(function () {
       $("#ig-img").css("transform", "scale(1.5)");
       $("#ig-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#ig-img").css("border-radius", "50%");
+      $("#ig-follow-btn").css("display", "unset");
     })
     .mouseleave(function () {
       $("#ig-img").attr("src", "../assets/images/ig.png");
       $("#ig-img").css("transform", "scale(1)");
       $("#ig-img").css("border", "3px transparent");
+      $("#ig-follow-btn").css("display", "none");
     });
 });
 //end ig
@@ -66,11 +68,13 @@ $(document).ready(function () {
       $("#github-img").css("transform", "scale(1.5)");
       $("#github-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#github-img").css("border-radius", "50%");
+      $("#github-follow-btn").css("display", "unset");
     })
     .mouseleave(function () {
       $("#github-img").attr("src", "../assets/images/github.png");
       $("#github-img").css("transform", "scale(1)");
       $("#github-img").css("border", "3px transparent");
+      $("#github-follow-btn").css("display", "none");
     });
 });
 //end github
@@ -83,11 +87,13 @@ $(document).ready(function () {
       $("#linkedin-img").css("transform", "scale(1.5)");
       $("#linkedin-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#linkedin-img").css("border-radius", "50%");
+      $("#linkedin-follow-btn").css("display", "unset");
     })
     .mouseleave(function () {
       $("#linkedin-img").attr("src", "../assets/images/linkedin.png");
       $("#linkedin-img").css("transform", "scale(1)");
       $("#linkedin-img").css("border", "3px transparent");
+      $("#linkedin-follow-btn").css("display", "none");
     });
 });
 //end linkedin
@@ -100,11 +106,13 @@ $(document).ready(function () {
       $("#twitter-img").css("transform", "scale(1.5)");
       $("#twitter-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#twitter-img").css("border-radius", "50%");
+      $("#twitter-follow-btn").css("display", "unset");
     })
     .mouseleave(function () {
       $("#twitter-img").attr("src", "../assets/images/twitter.png");
       $("#twitter-img").css("transform", "scale(1)");
       $("#twitter-img").css("border", "3px transparent");
+      $("#twitter-follow-btn").css("display", "none");
     });
 });
 // end twitter
@@ -117,11 +125,13 @@ $(document).ready(function () {
       $("#wa-img").css("transform", "scale(1.5)");
       $("#wa-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#wa-img").css("border-radius", "50%");
+      $("#wa-follow-btn").css("display", "unset");
     })
     .mouseleave(function () {
       $("#wa-img").attr("src", "../assets/images/wa.png");
       $("#wa-img").css("transform", "scale(1)");
       $("#wa-img").css("border", "3px transparent");
+      $("#wa-follow-btn").css("display", "none");
     });
 });
 // end wa
@@ -134,12 +144,69 @@ $(document).ready(function () {
       $("#gmail-img").css("transform", "scale(1.5)");
       $("#gmail-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#gmail-img").css("border-radius", "50%");
+      $("#gmail-follow-btn").css("display", "unset");
     })
     .mouseleave(function () {
       $("#gmail-img").attr("src", "../assets/images/gmail.png");
       $("#gmail-img").css("transform", "scale(1)");
       $("#gmail-img").css("border", "3px transparent");
+      $("#gmail-follow-btn").css("display", "none");
     });
 });
 // end gmail
 //end image
+
+//link contact
+//ig
+$("#ig-follow-btn").click(function () {
+  location.href = "https://instagram.com/akbar_riski";
+});
+//github
+$("#github-follow-btn").click(function () {
+  location.href = "http://github.com/algorithmsEvolve";
+});
+//linkedin
+$("#linkedin-follow-btn").click(function () {
+  location.href = "https://linkedin.com/in/akbar-riski";
+});
+//twitter
+$("#twitter-follow-btn").click(function () {
+  location.href = "https://twitter.com/algorithms_ev";
+});
+//wa
+$("#wa-follow-btn").click(function () {
+  location.href =
+    "https://wa.me/6289529229541?text=Hello,%20Akbar.%20I've%20seen%20your%20portfolio.%20";
+});
+//gmail
+$("#ig-follow-btn").click(function () {
+  location.href = "http://instagram.com/akbar_riski";
+});
+
+//modal
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("gmail-follow-btn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+//end modal

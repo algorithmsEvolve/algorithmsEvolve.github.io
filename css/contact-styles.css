@@ -230,7 +230,29 @@ div.sosmed-card {
   height: 100px;
   display: flex;
   align-items: center;
+  justify-content: center;
   border: 3px solid rgb(148, 148, 148);
+}
+
+.follow-btn {
+  display: none;
+  position: absolute;
+  z-index: 30;
+  width: 5em;
+  height: 2em;
+  font-size: 0.5em;
+  /* btn */
+  background: #575757;
+  color: white;
+  border: 0px;
+  justify-content: center;
+  border-radius: 40px;
+  box-shadow: 0 0px 5px #575757;
+}
+
+.follow-btn:hover {
+  color: white;
+  text-decoration: none !important;
 }
 
 .zoom {
@@ -317,3 +339,72 @@ img.sosmed {
     padding-top: 3em !important;
   }
 }
+
+/* modal */
+/* The Modal (background) */
+.modal {
+  text-align: center;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+.modal h4 {
+  font-weight: bold;
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  display: unset;
+  padding: 2px 16px;
+  background-color: #575757;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+/* end modal */
