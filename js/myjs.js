@@ -51,12 +51,14 @@ $(document).ready(function () {
       $("#ig-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#ig-img").css("border-radius", "50%");
       $("#ig-follow-btn").css("display", "unset");
+      $("#ig-follow-btn").removeAttr("disabled");
     })
     .mouseleave(function () {
       $("#ig-img").attr("src", "../assets/images/ig.png");
       $("#ig-img").css("transform", "scale(1)");
       $("#ig-img").css("border", "3px transparent");
       $("#ig-follow-btn").css("display", "none");
+      $("#ig-follow-btn").attr("disabled", "disabled");
     });
 });
 //end ig
@@ -69,12 +71,14 @@ $(document).ready(function () {
       $("#github-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#github-img").css("border-radius", "50%");
       $("#github-follow-btn").css("display", "unset");
+      $("#github-follow-btn").removeAttr("disabled");
     })
     .mouseleave(function () {
       $("#github-img").attr("src", "../assets/images/github.png");
       $("#github-img").css("transform", "scale(1)");
       $("#github-img").css("border", "3px transparent");
       $("#github-follow-btn").css("display", "none");
+      $("#github-follow-btn").attr("disabled", "disabled");
     });
 });
 //end github
@@ -88,12 +92,14 @@ $(document).ready(function () {
       $("#linkedin-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#linkedin-img").css("border-radius", "50%");
       $("#linkedin-follow-btn").css("display", "unset");
+      $("#linkedin-follow-btn").removeAttr("disabled");
     })
     .mouseleave(function () {
       $("#linkedin-img").attr("src", "../assets/images/linkedin.png");
       $("#linkedin-img").css("transform", "scale(1)");
       $("#linkedin-img").css("border", "3px transparent");
       $("#linkedin-follow-btn").css("display", "none");
+      $("#linkedin-follow-btn").attr("disabled", "disabled");
     });
 });
 //end linkedin
@@ -107,12 +113,14 @@ $(document).ready(function () {
       $("#twitter-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#twitter-img").css("border-radius", "50%");
       $("#twitter-follow-btn").css("display", "unset");
+      $("#twitter-follow-btn").removeAttr("disabled");
     })
     .mouseleave(function () {
       $("#twitter-img").attr("src", "../assets/images/twitter.png");
       $("#twitter-img").css("transform", "scale(1)");
       $("#twitter-img").css("border", "3px transparent");
       $("#twitter-follow-btn").css("display", "none");
+      $("#twitter-follow-btn").attr("disabled", "disabled");
     });
 });
 // end twitter
@@ -126,12 +134,14 @@ $(document).ready(function () {
       $("#wa-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#wa-img").css("border-radius", "50%");
       $("#wa-follow-btn").css("display", "unset");
+      $("#wa-follow-btn").removeAttr("disabled");
     })
     .mouseleave(function () {
       $("#wa-img").attr("src", "../assets/images/wa.png");
       $("#wa-img").css("transform", "scale(1)");
       $("#wa-img").css("border", "3px transparent");
       $("#wa-follow-btn").css("display", "none");
+      $("#wa-follow-btn").attr("disabled", "disabled");
     });
 });
 // end wa
@@ -145,12 +155,14 @@ $(document).ready(function () {
       $("#gmail-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#gmail-img").css("border-radius", "50%");
       $("#gmail-follow-btn").css("display", "unset");
+      $("#gmail-follow-btn").removeAttr("disabled");
     })
     .mouseleave(function () {
       $("#gmail-img").attr("src", "../assets/images/gmail.png");
       $("#gmail-img").css("transform", "scale(1)");
       $("#gmail-img").css("border", "3px transparent");
       $("#gmail-follow-btn").css("display", "none");
+      $("#gmail-follow-btn").attr("disabled", "disabled");
     });
 });
 // end gmail
