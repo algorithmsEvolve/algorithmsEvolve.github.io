@@ -6,33 +6,6 @@ var flkty = new Flickity(".main-gallery", {
 });
 // end carousel
 
-// modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn2 = document.getElementById("myBtn2");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn2.onclick = function () {
-  modal.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
-// end modal
-
 //image click fullscreen
 $("img[data-enlargable]")
   .addClass("img-enlargable")
@@ -67,3 +40,106 @@ $("img[data-enlargable]")
     });
   });
 //end image click fullscreen
+
+//image on hover
+// ig
+$(document).ready(function () {
+  $("#ig")
+    .mouseenter(function () {
+      $("#ig-img").attr("src", "../assets/images/ig-pp.jpg");
+      $("#ig-img").css("transform", "scale(1.5)");
+      $("#ig-img").css("border", "2px solid rgb(148, 148, 148)");
+      $("#ig-img").css("border-radius", "50%");
+    })
+    .mouseleave(function () {
+      $("#ig-img").attr("src", "../assets/images/ig.png");
+      $("#ig-img").css("transform", "scale(1)");
+      $("#ig-img").css("border", "3px transparent");
+    });
+});
+//end ig
+//github
+$(document).ready(function () {
+  $("#github")
+    .mouseenter(function () {
+      $("#github-img").attr("src", "../assets/images/github-pp.jpeg");
+      $("#github-img").css("transform", "scale(1.5)");
+      $("#github-img").css("border", "2px solid rgb(148, 148, 148)");
+      $("#github-img").css("border-radius", "50%");
+    })
+    .mouseleave(function () {
+      $("#github-img").attr("src", "../assets/images/github.png");
+      $("#github-img").css("transform", "scale(1)");
+      $("#github-img").css("border", "3px transparent");
+    });
+});
+//end github
+
+//linkedin
+$(document).ready(function () {
+  $("#linkedin")
+    .mouseenter(function () {
+      $("#linkedin-img").attr("src", "../assets/images/linkedin-pp.jpeg");
+      $("#linkedin-img").css("transform", "scale(1.5)");
+      $("#linkedin-img").css("border", "2px solid rgb(148, 148, 148)");
+      $("#linkedin-img").css("border-radius", "50%");
+    })
+    .mouseleave(function () {
+      $("#linkedin-img").attr("src", "../assets/images/linkedin.png");
+      $("#linkedin-img").css("transform", "scale(1)");
+      $("#linkedin-img").css("border", "3px transparent");
+    });
+});
+//end linkedin
+
+//twitter
+$(document).ready(function () {
+  $("#twitter")
+    .mouseenter(function () {
+      $("#twitter-img").attr("src", "../assets/images/twitter-pp.jpg");
+      $("#twitter-img").css("transform", "scale(1.5)");
+      $("#twitter-img").css("border", "2px solid rgb(148, 148, 148)");
+      $("#twitter-img").css("border-radius", "50%");
+    })
+    .mouseleave(function () {
+      $("#twitter-img").attr("src", "../assets/images/twitter.png");
+      $("#twitter-img").css("transform", "scale(1)");
+      $("#twitter-img").css("border", "3px transparent");
+    });
+});
+// end twitter
+
+//wa
+$(document).ready(function () {
+  $("#wa")
+    .mouseenter(function () {
+      $("#wa-img").attr("src", "../assets/images/wa-pp.jpeg");
+      $("#wa-img").css("transform", "scale(1.5)");
+      $("#wa-img").css("border", "2px solid rgb(148, 148, 148)");
+      $("#wa-img").css("border-radius", "50%");
+    })
+    .mouseleave(function () {
+      $("#wa-img").attr("src", "../assets/images/wa.png");
+      $("#wa-img").css("transform", "scale(1)");
+      $("#wa-img").css("border", "3px transparent");
+    });
+});
+// end wa
+
+//gmail
+$(document).ready(function () {
+  $("#gmail")
+    .mouseenter(function () {
+      $("#gmail-img").attr("src", "../assets/images/twitter-pp.jpg");
+      $("#gmail-img").css("transform", "scale(1.5)");
+      $("#gmail-img").css("border", "2px solid rgb(148, 148, 148)");
+      $("#gmail-img").css("border-radius", "50%");
+    })
+    .mouseleave(function () {
+      $("#gmail-img").attr("src", "../assets/images/gmail.png");
+      $("#gmail-img").css("transform", "scale(1)");
+      $("#gmail-img").css("border", "3px transparent");
+    });
+});
+// end gmail
+//end image
