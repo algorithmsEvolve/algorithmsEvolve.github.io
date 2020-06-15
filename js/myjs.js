@@ -50,8 +50,12 @@ $(document).ready(function () {
       $("#ig-img").css("transform", "scale(1.5)");
       $("#ig-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#ig-img").css("border-radius", "50%");
+      $("#ig-img").css("cursor", "pointer");
+    })
+    .click(function () {
       $("#ig-follow-btn").css("display", "unset");
       $("#ig-follow-btn").removeAttr("disabled");
+      $("#ig-img").css("opacity", "0.5");
     })
     .mouseleave(function () {
       $("#ig-img").attr("src", "../assets/images/ig.png");
@@ -59,6 +63,7 @@ $(document).ready(function () {
       $("#ig-img").css("border", "3px transparent");
       $("#ig-follow-btn").css("display", "none");
       $("#ig-follow-btn").attr("disabled", "disabled");
+      $("#ig-img").css("opacity", "1");
     });
 });
 //end ig
