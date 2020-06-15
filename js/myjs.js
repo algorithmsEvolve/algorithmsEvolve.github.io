@@ -55,7 +55,7 @@ $(document).ready(function () {
     .click(function () {
       $("#ig-follow-btn").css("display", "unset");
       $("#ig-follow-btn").removeAttr("disabled");
-      $("#ig-img").css("opacity", "0.5");
+      $("#ig").css("opacity", "0.8");
     })
     .mouseleave(function () {
       $("#ig-img").attr("src", "../assets/images/ig.png");
@@ -63,7 +63,7 @@ $(document).ready(function () {
       $("#ig-img").css("border", "3px transparent");
       $("#ig-follow-btn").css("display", "none");
       $("#ig-follow-btn").attr("disabled", "disabled");
-      $("#ig-img").css("opacity", "1");
+      $("#ig").css("opacity", "1");
     });
 });
 //end ig
@@ -75,8 +75,12 @@ $(document).ready(function () {
       $("#github-img").css("transform", "scale(1.5)");
       $("#github-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#github-img").css("border-radius", "50%");
+      $("#github-img").css("cursor", "pointer");
+    })
+    .click(function () {
       $("#github-follow-btn").css("display", "unset");
       $("#github-follow-btn").removeAttr("disabled");
+      $("#github").css("opacity", "0.8");
     })
     .mouseleave(function () {
       $("#github-img").attr("src", "../assets/images/github.png");
@@ -84,6 +88,7 @@ $(document).ready(function () {
       $("#github-img").css("border", "3px transparent");
       $("#github-follow-btn").css("display", "none");
       $("#github-follow-btn").attr("disabled", "disabled");
+      $("#github").css("opacity", "1");
     });
 });
 //end github
@@ -96,8 +101,12 @@ $(document).ready(function () {
       $("#linkedin-img").css("transform", "scale(1.5)");
       $("#linkedin-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#linkedin-img").css("border-radius", "50%");
+      $("#linkedin-img").css("cursor", "pointer");
+    })
+    .click(function () {
       $("#linkedin-follow-btn").css("display", "unset");
       $("#linkedin-follow-btn").removeAttr("disabled");
+      $("#linkedin").css("opacity", "0.8");
     })
     .mouseleave(function () {
       $("#linkedin-img").attr("src", "../assets/images/linkedin.png");
@@ -105,6 +114,7 @@ $(document).ready(function () {
       $("#linkedin-img").css("border", "3px transparent");
       $("#linkedin-follow-btn").css("display", "none");
       $("#linkedin-follow-btn").attr("disabled", "disabled");
+      $("#linkedin").css("opacity", "1");
     });
 });
 //end linkedin
@@ -117,8 +127,12 @@ $(document).ready(function () {
       $("#twitter-img").css("transform", "scale(1.5)");
       $("#twitter-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#twitter-img").css("border-radius", "50%");
+      $("#twitter-img").css("cursor", "pointer");
+    })
+    .click(function () {
       $("#twitter-follow-btn").css("display", "unset");
       $("#twitter-follow-btn").removeAttr("disabled");
+      $("#twitter").css("opacity", "0.8");
     })
     .mouseleave(function () {
       $("#twitter-img").attr("src", "../assets/images/twitter.png");
@@ -126,6 +140,7 @@ $(document).ready(function () {
       $("#twitter-img").css("border", "3px transparent");
       $("#twitter-follow-btn").css("display", "none");
       $("#twitter-follow-btn").attr("disabled", "disabled");
+      $("#twitter").css("opacity", "1");
     });
 });
 // end twitter
@@ -138,8 +153,12 @@ $(document).ready(function () {
       $("#wa-img").css("transform", "scale(1.5)");
       $("#wa-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#wa-img").css("border-radius", "50%");
+      $("#wa-img").css("cursor", "pointer");
+    })
+    .click(function () {
       $("#wa-follow-btn").css("display", "unset");
       $("#wa-follow-btn").removeAttr("disabled");
+      $("#wa").css("opacity", "0.8");
     })
     .mouseleave(function () {
       $("#wa-img").attr("src", "../assets/images/wa.png");
@@ -147,6 +166,7 @@ $(document).ready(function () {
       $("#wa-img").css("border", "3px transparent");
       $("#wa-follow-btn").css("display", "none");
       $("#wa-follow-btn").attr("disabled", "disabled");
+      $("#wa").css("opacity", "1");
     });
 });
 // end wa
@@ -159,8 +179,12 @@ $(document).ready(function () {
       $("#gmail-img").css("transform", "scale(1.5)");
       $("#gmail-img").css("border", "2px solid rgb(148, 148, 148)");
       $("#gmail-img").css("border-radius", "50%");
+      $("#gmail-img").css("cursor", "pointer");
+    })
+    .click(function () {
       $("#gmail-follow-btn").css("display", "unset");
       $("#gmail-follow-btn").removeAttr("disabled");
+      $("#gmail").css("opacity", "0.8");
     })
     .mouseleave(function () {
       $("#gmail-img").attr("src", "../assets/images/gmail.png");
@@ -168,6 +192,7 @@ $(document).ready(function () {
       $("#gmail-img").css("border", "3px transparent");
       $("#gmail-follow-btn").css("display", "none");
       $("#gmail-follow-btn").attr("disabled", "disabled");
+      $("#gmail").css("opacity", "1");
     });
 });
 // end gmail
